@@ -26,3 +26,5 @@ Linkedin: [https://www.linkedin.com/in/juanfariaskb/](https://www.linkedin.com/i
 
 #### Qualquer dúvida pode chamar que eu não terei preguiça de te responder!
 
+### v1.0:
+![image](https://user-images.githubusercontent.com/77401614/123021073-c4d29180-d3a9-11eb-8a3c-e229e9a61ca3.png)
