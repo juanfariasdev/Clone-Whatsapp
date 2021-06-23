@@ -3,6 +3,8 @@
 Projeto criado para estudar o ReactJS e minhas habilidades de estruturação de código.
 O projeto é somente para estudos e terá coisas que não são exatamente idênticas ao whatsapp como algumas cores e imagens.
 
+Até o momento não está disponivel o Firebase. Somente o layout ainda inacabado!!
+
 ## Como iniciar?
 
 Para iniciar o projeto basta usar o comando:
