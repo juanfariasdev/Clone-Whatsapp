@@ -101,13 +101,13 @@
 }
 
 aside.emoji-picker-react{
-    width: auto;
-    background: none;
+    width: auto !important;
+    background: none !important;
 }
 .emoji-picker-react .emoji-group:before {
-    background: none;
-    position: inherit;
-    text-transform: none;
-    font-weight: 400;
-    font-size: 15px;
+    background: none !important;
+    position: inherit !important;
+    text-transform: none !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
 }
