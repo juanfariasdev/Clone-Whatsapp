@@ -10,8 +10,12 @@ Teste aqui: [clone-whatsapp-blue.vercel.app](clone-whatsapp-blue.vercel.app)
 
 ## Como iniciar?
 
-Para iniciar o projeto basta usar o comando:
+Para compilar o projeto basta usar o comando:
 
+### `npm cache clean --force`
+### `npm run build`
+
+Para iniciar:
 ### `npm start`
 
 Abra [http://localhost:3000](http://localhost:3000) para ver no seu navegador!
