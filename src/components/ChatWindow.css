@@ -54,6 +54,7 @@
     background-size: contain;
     background-blend-mode: overlay;
     background-attachment: fixed;
+    padding: 20px 30px;
 }
 
 .chatWindow--footer{
