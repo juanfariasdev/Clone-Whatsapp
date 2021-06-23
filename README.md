@@ -5,6 +5,9 @@ O projeto é somente para estudos e terá coisas que não são exatamente idênt
 
 Até o momento não está disponivel o Firebase. Somente o layout ainda inacabado!!
 
+Teste aqui: [clone-whatsapp-blue.vercel.app](clone-whatsapp-blue.vercel.app)
+
+
 ## Como iniciar?
 
 Para iniciar o projeto basta usar o comando:
