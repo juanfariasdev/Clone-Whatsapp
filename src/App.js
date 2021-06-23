@@ -12,10 +12,10 @@ import SearchIcon from '@material-ui/icons/Search';
 export default () => {
 
   const[chatlist, setChatlist] = useState([
-    {chatId: 1, title: 'Fulano', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
-    {chatId: 2, title: 'Fulano', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
-    {chatId: 3, title: 'Fulano', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
-    {chatId: 4, title: 'Fulano', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
+    {chatId: 1, title: 'Juan Pablo Farias', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
+    {chatId: 2, title: 'Juan Pablo Araujo Farias', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
+    {chatId: 3, title: 'Juan Pablo', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
+    {chatId: 4, title: 'Juan Farias', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
   ]);
   const [activeChat, setActiveChat] = useState({});
   return(
