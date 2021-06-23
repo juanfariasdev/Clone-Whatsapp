@@ -97,4 +97,8 @@ aside.emoji-picker-react{
 }
 .emoji-picker-react .emoji-group:before {
     background: none;
+    position: inherit;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 15px;
 }
