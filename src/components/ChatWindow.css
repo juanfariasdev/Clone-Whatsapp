@@ -1,0 +1,99 @@
+.chatWindow{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.chatWindow--header{
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatWindow--headerinfo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chatWindow--avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.chatWindow--name{
+    font-size: 17px;
+    color: #000;
+}
+.chatWindow--headerbuttons{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.chatWindow--btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all ease 0.3s;
+}
+.chatWindow--body {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #e5ddd5;
+    background-position: center;
+    background-image: url('https://web.whatsapp.com/img/bg-chat-tile-light_04fcacde539c58cca6745483d4858c52.png');
+    background-size: contain;
+    background-blend-mode: overlay;
+}
+
+.chatWindow--footer{
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+.chatWindow--pre{
+    display: flex;
+    margin: 0 15px;
+}
+.chatWindow--inputarea{
+    flex: 1;
+}
+.chatWindow--input{
+    width: 100%;
+    height: 40px;
+    border:0px;
+    outline: 0;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #4a4a4a;
+    padding-left: 15px;
+}
+
+.chatWindow--pos{
+    display: flex;
+    margin: 0 15px;
+}
+
+.chatWindow--emojiarea{
+    height: 200px;
+    overflow-y: hidden;
+    transition: all ease 0.3s;
+}
+
+aside.emoji-picker-react{
+    width: auto;
+    background: none;
+}
+.emoji-picker-react .emoji-group:before {
+    background: none;
+}
