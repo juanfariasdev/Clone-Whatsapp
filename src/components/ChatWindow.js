@@ -46,11 +46,21 @@ export default() => {
             <div className="chatWindow--body">
 
             </div>
-            <div className="chatWindow--emojiarea" style={{height: emojiOpen ? '200px' :'0px'}}>
+            <div className="chatWindow--emojiarea" style={{height: emojiOpen ? '330px' :'0px'}}>
                 <EmojiPicker 
                     onEmojiClick={handEmojiClick}
-                    disableSearchBar
                     disableSkinTonePicker
+                    groupNames={{
+                        smileys_people: 'Smileys e pessoas',
+                        animals_nature: 'Animais e natureza',
+                        food_drink: 'Comidas e bebidas',
+                        travel_places: 'Viagens e lugares',
+                        activities: 'Atividades',
+                        objects: 'Objetos',
+                        symbols: 'Símbolos',
+                        flags: 'Bandeiras',
+                        recently_used: 'Recentes',
+                      }}
                 />
             </div>
             <div className="chatWindow--footer">
