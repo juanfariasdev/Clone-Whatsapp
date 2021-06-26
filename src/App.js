@@ -14,13 +14,12 @@ import Api from './Api';
 
 export default () => {
 
-  const[chatlist, setChatlist] = useState([
-    {chatId: 1, title: 'Juan Pablo Farias', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
-    {chatId: 2, title: 'Juan Pablo Araujo Farias', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
-    {chatId: 3, title: 'Juan Pablo', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
-    {chatId: 4, title: 'Juan Farias', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
-  ]);
-  const [user, setUser] = useState(null);
+  const[chatlist, setChatlist] = useState([]);
+  const [user, setUser] = useState({
+    id: 'gqI1v1RAj3Zv8I4XH0raBO84K7h2',
+    name: 'Juan Pablo',
+    avatar: 'https://graph.facebook.com/1934559463384707/picture' 
+  });
   const [activeChat, setActiveChat] = useState({});
   const [showNewChat, setshowNewChat] = useState(false);
   
