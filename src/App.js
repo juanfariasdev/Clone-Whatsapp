@@ -3,6 +3,9 @@ import "./App.css";
 import ChatListitem from './components/ChatListItem';
 import ChatIntro from './components/ChatIntro';
 import ChatWindow from './components/ChatWindow';
+import NewChat from './components/NewChat';
+
+
 import DonutLargeIcon from '@material-ui/icons/DonutLarge';
 import ChatIcon from '@material-ui/icons/Chat';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
@@ -22,16 +25,30 @@ export default () => {
     name: 'Juan Pablo'
   });
   const [activeChat, setActiveChat] = useState({});
+  const [showNewChat, setshowNewChat] = useState(false);
+  
+  const handleNewChat = () => {
+    setshowNewChat(true);
+  }
+
   return(
     <div className="app-window">
       <div className="sidebar">
+        <NewChat 
+          chatlist = {chatlist}
+          user = {user}
+          show = {showNewChat}
+          setShow = {setshowNewChat}
+        />
         <header>
           <img className="header--avatar" src={user.avatar} alt=""/>
           <div className="header--buttons">
             <div className="header--btn">
               <DonutLargeIcon style={{color: '#919191'}}/>
             </div>
-            <div className="header--btn">
+            <div 
+            onClick = {handleNewChat}
+            className="header--btn">
               <ChatIcon style={{color: '#919191'}}/>
             </div>
             <div className="header--btn">
