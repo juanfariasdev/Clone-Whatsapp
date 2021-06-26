@@ -4,7 +4,7 @@ import ChatListitem from './components/ChatListItem';
 import ChatIntro from './components/ChatIntro';
 import ChatWindow from './components/ChatWindow';
 import NewChat from './components/NewChat';
-
+import Login from './components/Login';
 
 import DonutLargeIcon from '@material-ui/icons/DonutLarge';
 import ChatIcon from '@material-ui/icons/Chat';
@@ -19,16 +19,27 @@ export default () => {
     {chatId: 3, title: 'Juan Pablo', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
     {chatId: 4, title: 'Juan Farias', image: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg'},
   ]);
-  const [user, setUser] = useState({
-    id:1234,
-    avatar: 'https://image.freepik.com/vetores-gratis/avatar-de-personagem-de-empresario-isolado_24877-60111.jpg',
-    name: 'Juan Pablo'
-  });
+  const [user, setUser] = useState(null);
   const [activeChat, setActiveChat] = useState({});
   const [showNewChat, setshowNewChat] = useState(false);
   
   const handleNewChat = () => {
     setshowNewChat(true);
+  }
+
+  const handleLoginData = async (u) => {
+    console.log(u);
+    let newUser = {
+      id: u.uid,
+      name: u.displayName,
+      avatar: u.photoURL
+    };
+    //
+    setUser(newUser);
+  }
+
+  if(user === null) {
+    return (<Login  onReceive={handleLoginData}/>)
   }
 
   return(
