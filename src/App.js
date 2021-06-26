@@ -10,6 +10,7 @@ import DonutLargeIcon from '@material-ui/icons/DonutLarge';
 import ChatIcon from '@material-ui/icons/Chat';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import SearchIcon from '@material-ui/icons/Search';
+import Api from './Api';
 
 export default () => {
 
@@ -34,12 +35,14 @@ export default () => {
       name: u.displayName,
       avatar: u.photoURL
     };
+    console.log(newUser);
+    await Api.addUser(newUser);
     //
     setUser(newUser);
   }
 
   if(user === null) {
-    return (<Login  onReceive={handleLoginData}/>)
+    return (<Login onReceive={handleLoginData}/>)
   }
 
   return(

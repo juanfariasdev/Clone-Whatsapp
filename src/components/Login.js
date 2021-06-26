@@ -5,8 +5,11 @@ import Api from '../Api';
 export default ({onReceive}) => {
     const handleFacebookLogin = async () => {
         let result = await Api.fbPopup();
-
+        
         if(result){
+            let credential = result.credential;
+            let token = credential.accessToken;
+            const dados = result.user;
             onReceive(result.user);
         } else {
             alert("Erro!");
