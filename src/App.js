@@ -15,14 +15,17 @@ import Api from './Api';
 export default () => {
 
   const[chatlist, setChatlist] = useState([]);
-  const [user, setUser] = useState({
-    id: 'gqI1v1RAj3Zv8I4XH0raBO84K7h2',
-    name: 'Juan Pablo',
-    avatar: 'https://graph.facebook.com/1934559463384707/picture' 
-  });
+  const [user, setUser] = useState(null);
   const [activeChat, setActiveChat] = useState({});
   const [showNewChat, setshowNewChat] = useState(false);
   
+  useEffect(() => {
+    if(user !== null ){
+      let unsub = Api.onChatList(user.id, setChatlist);
+      return unsub;
+    }
+  }, [user]);
+
   const handleNewChat = () => {
     setshowNewChat(true);
   }
@@ -90,6 +93,7 @@ export default () => {
         {activeChat.chatId !== undefined && 
           <ChatWindow 
             user = {user}
+            data = {activeChat}
           />
         }
         {activeChat.chatId === undefined &&
