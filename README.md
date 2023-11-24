@@ -3,9 +3,8 @@
 Projeto criado para estudar o ReactJS e minhas habilidades de estruturação de código.
 O projeto é somente para estudos e terá coisas que não são exatamente idênticas ao whatsapp como algumas cores e imagens.
 
-Até o momento não está disponivel o Firebase. Somente o layout ainda inacabado!!
-
 Teste aqui: [http://clone-whatsapp-blue.vercel.app](http://clone-whatsapp-blue.vercel.app)
+Pode não funcionar por ser antigo!
 
 
 ## Como iniciar?
@@ -20,7 +19,6 @@ Para iniciar:
 
 Abra [http://localhost:3000](http://localhost:3000) para ver no seu navegador!
 
-O projeto futuramente irá usar o firebase e não testei exportar as configurações dele.\
 Pode conter alguns erros e funções não funcionar pois falta bastante coisa para acabar!!
 
 
